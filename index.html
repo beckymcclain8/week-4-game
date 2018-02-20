@@ -8,11 +8,12 @@
         crossorigin="anonymous">
     <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
     <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <script src="assets/javascript/game.js"></script>
     <title>Crystals Collector!</title>
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" style= "background: white;">
         <div class="container">
             <h1 class="display-4">Crystals Collector</h1>
             <p class="lead">
@@ -30,43 +31,53 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-6" id=rand>random number</div>
-            <div class="col-g" id=wins_losses>
-                <p>Wins: </p>
-                <p>Losses: </p>
+            <div class="col-6">
+                <p id=randTitle>Your Random Number:</p>
+            </div>
+            <div class="col-6" id=wins_losses>
+                <p>Wins:  <span id="wins"></span></p>
+                 
+                <br>
+                <p>Losses:  <span id="loss"></span> </p>
+                
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row">
-            <div class "col-3">
-                <img src= "assets/images/emerald.png" alt= "emerald jewel" class="jewels">
+            <div class="col-6" id=rand></div>
+        </div>
+    </div>
+<br>
+    <div class="container">
+        <div class="row">
+            <div class "col-3" id= "jewelRow">
+                <img src= "assets/images/red.png" alt= "red jewel" class="jewels" id="red">
             </div>
             <div class "col-3">
-                <img src= "assets/images/pink.jpg" alt= "pink jewel" class="jewels">
+                <img src= "assets/images/yellow.png" alt= "yellow jewel" class="jewels" id="yellow">
             </div>
             <div class "col-3">
-                <img src= "assets/images/red.png" alt= "red jewel" class="jewels">
-            </div>
-            <div class "col-3">
-                <img src= "assets/images/yellow.png" alt= "yellow jewel" class="jewels">
+                    <img src= "assets/images/emerald.png" alt= "emerald jewel" class="jewels" id="emerald">
+                </div>
+                <div class "col-3">
+                    <img src= "assets/images/pink.jpg" alt= "pink jewel" class="jewels" id="pink">
+                </div>
+        </div>
+    </div>
+<br>
+    <div class="container">
+        <div class="row">
+            <div class = "col-6" id="score">
+                <p id="scoreTitle">Your Total Score Is:</p>
             </div>
         </div>
     </div>
-
+<br>
     <div class="container">
         <div class="row">
-            <div id=score>
-                <p>Your total score is:</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div id=scoreboard>
-                <p>score</p>
+            <div class ="col-6" id="scoreboard">
+                <p id="finalScore">0</p>
             </div>
         </div>
     </div>
